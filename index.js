@@ -1,4 +1,4 @@
-function findMinAndRemove_selection_sort(array){
+function findMinAndRemove(array){
   let min = array[0];
   let min_index = 0;
   for(let i = 1; i < array.length; i++){
