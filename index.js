@@ -1,4 +1,4 @@
-function findMinAndRemove(array){
+function findMinAndRemove_selection_sort(array){
   let min = array[0];
   let min_index = 0;
   for(let i = 1; i < array.length; i++){
@@ -35,7 +35,9 @@ function place_number(sorted_arr, incoming_num){
 
 function insertionSort(array){
   let sorted_arr = []
+  let duplicate = Array.from(array)
   while(array.length > 0){
+    findMinAndRemove(duplicate)
     let test_num = array.shift()
     place_number(sorted_arr, test_num)
   }
