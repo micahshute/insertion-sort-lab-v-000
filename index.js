@@ -8,16 +8,17 @@ function findMinAndRemove(array){
     }
   }
   array.splice(min_index, 1)
-  console.log(array)
-  console.log(min)
+
   return min
 }
 
 function insertionSort(array){
+  console.log(array)
   let sorted_arr = []
   for(let i = 0; i < array.length; i++){
     let minimum = findMinAndRemove(array)
     sorted_arr.push(minimum)
   }
+  console.log(sorted_arr)
   return sorted_arr
 }
