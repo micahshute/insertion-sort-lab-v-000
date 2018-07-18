@@ -35,7 +35,7 @@ function place_number(sorted_arr, incoming_num){
 
 function insertionSort(array){
   let sorted_arr = []
-  while array.length > 0{
+  while(array.length > 0){
     test_num = array.shift()
     place_number(sorted_arr, test_num)
   }
