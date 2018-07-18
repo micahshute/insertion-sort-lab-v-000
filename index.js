@@ -27,7 +27,7 @@ function place_number(sorted_arr, incoming_num){
     if(incoming_num > sorted_arr[i]){
       sorted_arr.splice(i + 1, 0, incoming_num)
       return sorted_arr
-    }    
+    }
   }
   sorted_arr.splice(0, 0, incoming_num)
   return sorted_arr
